@@ -2,7 +2,7 @@
 	"id": "dragon-age",
 	"title": "Dragon AGE",
 	"description": "A basic game system for Dragon AGE RPG, base is the Blue Rose 0.2.2 game system for foundryVTT from studio315b aka Andrew Nichols",
-	"version": "0.2.2.8",
+	"version": "0.2.3.0",
 	"authors": {
 		"name" : "c9d"
 	},
