@@ -77,8 +77,13 @@ export class PlayerCharacterSheet extends ActorSheet {
         sheetData.data.armorRating = armor.armorRating;
         sheetData.data.armorPenalty = armor.armorPenalty;
         this._sortItems(sheetData);
-        while (sheetData.data.persona.goals.length < 3) {
-            sheetData.data.persona.goals.push("");
+        try {
+            while (sheetData.data.persona.goals.length < 3) {
+                sheetData.data.persona.goals.push("");
+            }
+        }
+        catch (e) {
+            console.log(e);
         }
         return sheetData;
     }
