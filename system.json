@@ -29,8 +29,8 @@
 	"gridDistance": 1,
 	"gridUnits": "yd",
 	"compatibility": {
-		"minimum": "0.7.0",
-		"verified": "0.7.8"
+		"minimum": 12,
+		"verified": 12
 	},
 	"url": "https://gitlab.com/markusraab78/dragon-age",
 	"manifest": "https://raw.githubusercontent.com/Cloud9Developer/dragon-age-vtt/refs/heads/main/system.json",
