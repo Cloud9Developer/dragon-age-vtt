@@ -3,7 +3,9 @@
 	"title": "Dragon AGE",
 	"description": "A basic game system for Dragon AGE RPG, base is the Blue Rose 0.2.2 game system for foundryVTT from studio315b aka Andrew Nichols",
 	"version": "0.2.2.8",
-	"author": "Markus Raab",
+	"authors": {
+		"name" : "c9d"
+	},
 	"scripts": [],
 	"esmodules": ["dragon-age.js"],
 	"styles": ["dragon-age.css"],
@@ -32,7 +34,7 @@
 	},
 	"url": "https://gitlab.com/markusraab78/dragon-age",
 	"manifest": "https://raw.githubusercontent.com/Cloud9Developer/dragon-age-vtt/refs/heads/main/system.json",
-	"download": "https://github.com/Cloud9Developer/dragon-age-vtt/raw/refs/heads/main/dragon-age-master.zip",
+	"download": "https://github.com/Cloud9Developer/dragon-age-vtt/archive/refs/tags/test1.zip",
 	"license": "https://raw.githubusercontent.com/Cloud9Developer/dragon-age-vtt/refs/heads/main/LICENSE",
 	"readme": "https://raw.githubusercontent.com/Cloud9Developer/dragon-age-vtt/refs/heads/main/README.md",
 	"bugs": "",
