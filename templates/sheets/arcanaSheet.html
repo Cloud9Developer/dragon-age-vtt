@@ -1,0 +1,85 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header-da">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <h1 class="name prop">
+            <input name="name" type="text" value="{{item.name}}" placeholder="Name" />
+            <label>Name</label>
+        </h1>
+        <div class="sub-header">
+            <div class="prop">
+                <input type="text" name="data.targetnumber" value="{{data.targetnumber}}" data-dtype="string" />
+                <label for="data.targetnumber">TN</label>
+            </div>
+			<div class="prop">
+                <select name="data.time" data-dtype="number">
+                    {{#select data.time}}
+                    <option value="0">None</option>
+                    <option value="1">Minor</option>
+                    <option value="2">Major</option>
+                    <option value="3">Minute</option>
+                    <option value="4">Variable</option>
+                    {{/select}}
+                </select>
+                <label for="data.reloadTime">Casting Time</label>
+            </div>
+            <div class="prop">
+                <input type="text" name="data.manacost" value="{{data.manacost}}" data-dtype="string" />
+                <label for="data.manacost">Mana Cost</label>
+            </div>
+            <div class="prop">
+                <select name="data.ability" data-dtype="String">
+                    {{#select data.ability}}
+                    <option value="Communication">Communication</option>
+                    <option value="Constitution">Constitution</option>
+					<option value="Cunning">Cunning</option>
+                    <option value="Dexterity">Dexterity</option>					                 
+                    <option value="Magic">Magic</option>
+					<option value="Perception">Perception</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Willpower">Willpower</option>
+                    {{/select}}
+                </select>
+                <label for="data.ability">Ability</label>
+            </div>
+            <div class="prop">
+                <select name="data.origin" data-dtype="String">
+                    {{#select data.origin}}
+                    <option value="Creation">Creation</option>
+                    <option value="Entropy">Entropy</option>
+					<option value="Prime">Prime</option>
+                    <option value="Spirit">Spirit</option>					                 
+                    <option value="Blood">Blood</option>
+                    {{/select}}
+                </select>
+                <label for="data.origin">School</label>
+            </div>
+        </div>
+    </header>
+    <section class="sheet-body">
+        <div class="stat-row">
+            <div class="prop">
+                <div class="resource">
+                    <input
+                        name="data.resistance.ability"
+                        type="text"
+                        value="{{data.resistance.ability}}"
+                        data-dtype="string"
+                    />
+                    <span>(</span>
+                    <input
+                        name="data.resistance.focus"
+                        type="text"
+                        value="{{data.resistance.focus}}"
+                        data-dtype="string"
+                    />
+                    <span>)</span>
+                </div>
+                <label>Resistance</label>
+            </div>
+        </div>
+        <div class="wide-section">
+            <h3>Description</h3>
+            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>

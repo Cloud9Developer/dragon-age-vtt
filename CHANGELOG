@@ -1,0 +1,8 @@
+0.2.2.1 - HOTFIX - restored TN and Casting Time fields for spells.
+0.2.2.2 - HOTFIX - restored school that was removed with hotfix 0.2.2.1
+0.2.2.3 - HOTFIX - made school work as focus for spell rolls.
+0.2.2.4 - fixed the fix
+0.2.2.5 - added fields for Level, GP, SP, CP
+0.2.2.6 - Fix for rolls in FoundryVTT 0.7.x - thanks to TheExpanse https://github.com/tibeggs/expanse-edit (Functinal fix - layout is still missing)
+0.2.2.7 - fix for sheet-header(-da)
+0.2.2.8 - css: resize character notes

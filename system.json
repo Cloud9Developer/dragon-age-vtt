@@ -1,0 +1,38 @@
+{
+	"name": "dragon-age",
+	"title": "Dragon AGE",
+	"description": "A basic game system for Dragon AGE RPG, base is the Blue Rose 0.2.2 game system for foundryVTT from studio315b aka Andrew Nichols",
+	"version": "0.2.2.8",
+	"author": "Markus Raab",
+	"scripts": [],
+	"esmodules": ["dragon-age.js"],
+	"styles": ["dragon-age.css"],
+	"packs": [
+		{
+			"entity": "Item",
+			"name": "focuses",
+			"label": "Focuses",
+			"system": "dragon-age",
+			"path": "./packs/focuses.db"
+		},
+		{
+			"entity": "Item",
+			"name": "items",
+			"label": "Items",
+			"system": "dragon-age",
+			"path": "./packs/items.db"
+		}
+	],
+	"languages": [],
+	"gridDistance": 1,
+	"gridUnits": "yd",
+	"minimumCoreVersion": "0.7.0",
+	"compatibleCoreVersion": "0.7.8",
+	"url": "https://gitlab.com/markusraab78/dragon-age",
+	"manifest": "https://gitlab.com/markusraab78/dragon-age/-/raw/master/system.json",
+	"download": "https://gitlab.com/markusraab78/dragon-age/-/raw/master/dragon-age-master.zip",
+	"license": "https://gitlab.com/markusraab78/dragon-age/-/raw/blob/LICENSE",
+	"readme": "https://gitlab.com/markusraab78/dragon-age/-/raw/blob/README.md",
+	"bugs": "",
+	"changelog": "https://gitlab.com/markusraab78/dragon-age/-/raw/master/CHANGELOG"
+}

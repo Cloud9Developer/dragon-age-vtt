@@ -1,0 +1,55 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header-da">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <h1 class="name prop">
+            <input name="name" type="text" value="{{item.name}}" placeholder="Name" />
+            <label>Name</label>
+        </h1>
+        <div class="sub-header">
+
+            <div class="prop wide">
+                <div class="resource">
+                    <input name="data.defaultAbility" type="text" value="{{data.defaultAbility}}" data-dtype="string" />
+                    <span>(</span>
+                    <input name="data.focus" type="text" value="{{data.focus}}" data-dtype="string" />
+                    <span>)</span>
+                </div>
+                <label>Roll</label>
+            </div>
+            <div class="prop">
+                <input type="text" name="data.damage" value="{{data.damage}}" data-dtype="string" />
+                <label for="data.damage">Damage</label>
+            </div>
+            <div class="prop">
+                <input type="text" name="data.attackRoll" value="{{data.attackRoll}}" data-dtype="string" />
+                <label for="data.attackRoll">Attack Bonus</label>
+            </div>
+        </div>
+    </header>
+    <section class="sheet-body">
+        <div class="stat-row">
+            <div class="prop">
+                <input type="text" name="data.shortRange" value="{{data.shortRange}}" data-dtype="string" />
+                <label for="data.shortRange">Short Range</label>
+            </div>
+            <div class="prop">
+                <input type="text" name="data.longRange" value="{{data.longRange}}" data-dtype="string" />
+                <label for="data.longRange">Long Range</label>
+            </div>
+            <div class="prop">
+                <select name="data.reloadTime" data-dtype="number">
+                    {{#select data.reloadTime}}
+                    <option value="0">None</option>
+                    <option value="1">Minor Action</option>
+                    <option value="2">Major Action</option>
+                    {{/select}}
+                </select>
+                <label for="data.reloadTime">Reload Time</label>
+            </div>
+        </div>
+        <div class="wide-section">
+            <h3>Description</h3>
+            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>
