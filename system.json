@@ -27,7 +27,7 @@
 	"gridDistance": 1,
 	"gridUnits": "yd",
 	"compatibility": {
-		"minimumCoreVersion": "0.7.0",
+		"minimum": "0.7.0",
 		"verified": "0.7.8"
 	},
 	"url": "https://gitlab.com/markusraab78/dragon-age",
